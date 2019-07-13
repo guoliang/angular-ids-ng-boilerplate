@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "preserveSymlinks": false,
             "outputPath": "dist/ids-graph",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -25,12 +26,26 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/ids-enterprise/dist/css",
+                "output": "/assets/ids-enterprise/css"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/ids-enterprise/dist/js/cultures",
+                "output": "/assets/ids-enterprise/js/cultures"
+              }
             ],
             "styles": [
               "src/styles.less"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/d3/build/d3.js",
+              "node_modules/ids-enterprise/dist/js/sohoxi.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -90,7 +105,11 @@
             "styles": [
               "src/styles.less"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/d3/build/d3.js",
+              "node_modules/ids-enterprise/dist/js/sohoxi.js"
+            ]
           }
         },
         "lint": {

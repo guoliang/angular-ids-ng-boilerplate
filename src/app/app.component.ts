@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ids-graph';
+  
+  constructor() {
+    Soho.Locale.culturesPath = '/assets/ids-enterprise/js/cultures/';
+    Soho.Locale.set('en-US');
+  }
+  ngOnInit(): void {
+    console.log("Hello World");
+  }
 }
