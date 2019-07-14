@@ -1,17 +1,18 @@
 <div class="row top-padding">
-    <div class="column">
-      <div class="widget">
-        <div class="widget-header">
-          <h2 class="widget-title">Line Chart Title</h2>
-        </div>
-        <div class="widget-content">
-          <div soho-line
-            [dataset]="lineData"
-            [xAxis]="xAxis">
-          </div>
+  <div class="column">
+    <div class="widget">
+      <div class="widget-header">
+        <h2 class="widget-title">Line Chart Title</h2>
+      </div>
+      <div class="widget-content">
+        <div soho-line
+          *ngIf="lineData.length"
+          [dataset]="lineData"
+          [xAxis]="xAxis">
         </div>
       </div>
     </div>
   </div>
+</div>
 
 <router-outlet></router-outlet>

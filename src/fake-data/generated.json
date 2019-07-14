@@ -1,0 +1,52 @@
+[
+  {
+    "id": 0,
+    "date": "2014-03-23",
+    "production": 221
+  },
+  {
+    "id": 1,
+    "date": "2017-10-24",
+    "production": 171
+  },
+  {
+    "id": 2,
+    "date": "2015-02-16",
+    "production": 109
+  },
+  {
+    "id": 3,
+    "date": "2018-08-28",
+    "production": 100
+  },
+  {
+    "id": 4,
+    "date": "2014-03-31",
+    "production": 357
+  },
+  {
+    "id": 5,
+    "date": "2017-12-26",
+    "production": 377
+  },
+  {
+    "id": 6,
+    "date": "2015-01-18",
+    "production": 400
+  },
+  {
+    "id": 7,
+    "date": "2017-04-16",
+    "production": 312
+  },
+  {
+    "id": 8,
+    "date": "2017-12-03",
+    "production": 307
+  },
+  {
+    "id": 9,
+    "date": "2016-06-24",
+    "production": 260
+  }
+]

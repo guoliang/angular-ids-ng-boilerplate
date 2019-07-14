@@ -25,6 +25,7 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
+              "src/fake-data",
               "src/favicon.ico",
               "src/assets",
               {
